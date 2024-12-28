@@ -1,0 +1,264 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+:root {
+  --primary-color: #E5E8E7;
+  --primary-color-dark: #b5b5b5;
+  --secondary-color: #24612d;
+  --text-dark: #030712;
+  --text-light: #6b7280;
+  --extra-light: #d1d5db;
+  --white: #fff0f3;
+  --max-width: 1200px;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+#green{
+ 
+  background: fixed #24612d;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 20px;
+  color: #fff;
+  padding: 1rem;
+  font-size: 0.8rem;
+}
+#navigation_header{
+  background: fixed #f9fffa;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 40px;
+  color: #050505;
+  padding: 1.3rem;
+  
+
+}
+#navigation_header div{
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+nav{
+  margin-bottom: 1rem;
+}
+nav ul , .menu-icon{
+  list-style-type:none;
+  text-decoration: none;
+  color: #050505;
+  display: flex;
+  gap: 2rem;
+}
+.menu-icon i:nth-child(5) {
+  display: none; /* Affiche uniquement le second élément */
+}
+
+
+nav ul a{
+  text-decoration: none;
+  color: #050505;
+}
+
+#home{
+  width: 100%;
+  height: 80vh;
+  background: url(images/Hellø\ Blogzine2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+#home div{
+  padding: 1rem;
+  margin-left: 2rem;
+
+
+}
+
+#home div p{
+ font-size: 0.9rem;
+ font-family: "Open Sans", sans-serif;
+ font-optical-sizing: auto;
+ font-weight: 400;
+ font-style: normal;
+ font-variation-settings:
+   "wdth" 100;
+
+   margin: 5px 0px;
+ 
+}
+
+#home div h1{
+  margin: 5px 0px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 2rem;
+  letter-spacing: 1.2px;
+
+}
+
+button{
+  margin: .7rem 0rem;
+  padding: 5px  12px;
+  text-align: center;
+  background-color:#000000;
+  color: #fff0f3;
+  outline: none;
+  border: none;
+  cursor: pointer;
+
+   
+} 
+#featured{
+  text-align: center;
+  padding: 2rem;
+}
+
+#featured h2{
+  font-family: "Roboto", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 1.5rem;
+}
+/* #presentation_one{
+  display: grid;
+  justify-content: center;
+  flex:1 1;
+  align-items: center;
+  grid-template-columns: 200px 200px 200px 200px;
+  column-gap: 30px;
+  
+} */
+.card {
+  border: none !important; 
+  box-shadow: none !important; 
+}
+
+
+
+
+ .card img{
+  height: 350px; 
+  /* min-width: 10px;
+  min-height: 100px; */
+
+} 
+.card-text{
+  font-weight: bold;
+  text-align: center;
+}
+
+.reduction{
+  background-color: #24612d;
+  font-weight: 500;
+  color: #fff;
+  position: relative;
+  top: -350px;
+  width: 70px;
+}
+
+.bigcard img{
+  height: 400px;
+  
+
+}
+.flexible{
+  position: relative;
+  top: -370px;
+  /* width:  200px; */
+}
+
+button{
+  background-color: #fff;
+  color: #030712;
+  padding: 6px;
+}
+.playwrite{
+  font-family: "Dancing Script", serif;
+  /* font-optical-sizing: auto; */
+  font-weight: bold;
+  font-style: normal;
+  font-size: 1.2rem;
+}
+
+footer{
+  background-color: #f1fcf3;
+  padding: 2rem;
+  margin-top: 40px;
+  
+}
+
+/* .one{
+  background: url(images/Shop\ Tulura\ —\ Seasonal\ Skincare\ _\ All-Natural\ All-Day\ Glow.jpg);
+
+}
+.two{
+  background: url(images/Aesop\ on\ Instagram_\ “States\ of\ Being_\ a\ room\ spray\ trio\ to\ reconfigure\ any\ interior_\ Each\ of\ our\ Aromatique\ Room\ Sprays\ is\ intended\ to\ delight\ the\ senses\ and…”.jpg);
+} */
+
+
+/* Responsive  */
+@media (max-width : 600px) {
+  nav ul{
+      position : absolute;
+      top:70px;
+      left:0;
+      right:0;
+      flex-direction: column;
+      text-align: center;
+      background: #24612d;
+      gap:0;
+      overflow: hidden;
+  }
+  nav{
+      background: #24612d;
+
+  }
+  nav ul li{
+      padding : 20px; 
+  }
+  
+ 
+  
+  
+
+  
+}
+@media (width <800px){
+
+  .menu-icon i {
+    display: none; /* Rend tous les éléments <i> invisibles */
+  }
+
+  .menu-icon i:nth-child(2) , .menu-icon i:nth-child(5){
+      display: inline; /* Affiche uniquement le second élément */
+  }
+  
+}
+@media (width > 800px) {
+  
+  #home{
+    
+    display: flex;
+    justify-content: start;
+    align-items: center;
+  }
+  
+  
+}
+
+@media (width < 1019px) {
+
+ 
+  
+}
